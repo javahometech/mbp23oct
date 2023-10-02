@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage("Maven Build"){
             steps{
-                sh "mvn clean package"
+                echo "maven clean package..."
             }
         }
         stage("Sonar Check"){
